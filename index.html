@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <a  href="https://icons8.com/icon/kKyA5NqLhGB6/password"></a>  <a href="https://icons8.com"></a>
+    <link rel="icon" href="/11220813.png" type="image/icon type">
+
+</head>
+<body>
+    <section id="navbar">
+    <div class="navbar">
+        <div class="logo">
+            <a href="index.html">
+            <img width="90" height="80" href="/index.html" src="https://img.icons8.com/external-icongeek26-glyph-icongeek26/64/7950F2/external-password-essentials-icongeek26-glyph-icongeek26.png" alt="external-password-essentials-icongeek26-glyph-icongeek26"/></a>
+        </div>
+        <div class="nav_list">
+            <ul>
+                <li><a href="#password_generator">Password Generator</a></li>
+                <li><a href="#container0">Security Checker</a></li>
+                <li><a href="#passwordManager">Tool</a></li>
+            </ul>
+        </div>
+    </div>
+    </section>
+    <div class="password_generator" id="password_generator">
+        <h1>Password Generator</h1>
+        <h4>Password Content:</h4>
+        <div class="dropdown-container">
+            <button class="dropbtn" id="dropdownBtn">Select password content <i class="fa-solid fa-angle-down"></i></button>
+            <div class="dropdown-content" id="dropdownContent">
+                <a href="#" data-value="mixed" class="selected">Mixed characters</a>
+                <a href="#" data-value="letters">Only letters</a>
+                <a href="#" data-value="numbers">Only numbers</a>
+            </div>
+        </div>
+        <div class="slider-container">
+            <input type="range" id="passwordLength" min="8" max="40" value="8">
+            <div id="rangeValue">8</div>
+        </div>
+        <div class="generate">
+            <textarea id="passwordOutput" readonly></textarea>
+            <div class="generate-button-container">
+                <button id="generateBtn">Generate</button>
+            </div>
+            <button id="copyBtn"><i class="fa-regular fa-copy"></i> Copy</button>
+
+          
+        </div>
+        
+        
+    </div>
+
+    <div class="container0" id="container0">
+        <h1>Password Security Checker</h1>
+        <label for="password">Write your password in the box to check security level:</label>
+        <input type="password" id="passwordInput" placeholder="Enter your password...">
+        <button id="checkBtn">Check Security Level</button>
+        <div id="result"></div>
+    </div>
+
+    <div class="passwordManager" id="passwordManager">
+        <h1>Password Manager tool and usage</h1>
+        <div class="Manager" >
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/1XEOC2D6A6g?si=hhb7lVLJsiAge2Lb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>          <div class="h3">
+            <a href="https://github.com/reshad131/Password_Manager" target="_blank"><h3>Github Link</h3> <i class="fa-brands fa-github  fa-5x"></i></a>
+        </div>
+        <h4>
+            If you want to securely store your passwords after generating them,
+             you can use a Python tool designed for this purpose. 
+             Unlike password managers, this tool doesn't pose any security 
+             risks and allows you to store passwords in an encrypted format on your own computer.
+              Even if the JSON file containing the passwords is leaked,
+               the encryption ensures that only you can access them. 
+               The video demonstrates how to install and use the tool,
+                making it easy to understand and implement.
+        </h4>
+    </div></div>
+
+  
+
+    <footer class="footer" id="footer">
+      
+        <ul class="social-icon">
+            <li class="social-icon__item"><a class="social-icon__link" target="_blank"  href="https://www.x.com/res4ad0">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a></li>
+            <li class="social-icon__item"><a class="social-icon__link" target="_blank"  href="https://www.linkedin.com/in/res4ad0">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a></li>
+            <li class="social-icon__item"><a class="social-icon__link" target="_blank" href="https://www.instagram.com/res4ad0">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a></li>
+          </ul>
+      
+        <p>&copy;Reshad Rustemov ||  Copy Write </p>
+      </footer>
+    <script src="app.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

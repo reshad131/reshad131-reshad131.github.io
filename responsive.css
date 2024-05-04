@@ -1,0 +1,69 @@
+@media screen and (min-width: 768px) {
+    #navbar {
+        padding: 20px 0;
+    }
+
+    .navbar {
+        margin-top: 0;
+    }
+
+    .password_generator, .container0 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .password_generator, .container0 {
+        text-align: left;
+    }
+
+    .passwordManager {
+        margin-top: 50px;
+    }
+
+    .footer {
+        
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .social-icon {
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .navbar {
+        margin-left: 240px;
+        margin-right: 240px;
+    }
+
+    .password_generator, .container0 {
+        max-width: 800px;
+    }
+
+    .passwordManager {
+        order: -1; 
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .password_generator, .container0 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .Manager {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .Manager h4 {
+        max-width: none;
+        margin-top: 20px;
+    }
+
+}
